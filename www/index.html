@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>RSS-Reader</title>
+        <script src="lib/jquery-1.6.4.js"></script>
+        <script src="lib/jquery.mobile-1.1.0.js"></script>
+        <link href="src/css/jquery.mobile.structure-1.1.0.css" rel="stylesheet">
+        <link href="src/css/jquery.mobile.theme-1.1.0.css" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scaleable=no">
+    </head>
+	
+    
+    <body>
+        <div data-role="page" id="page1" data-theme="a">
+            <div data-role="header" data-position="inline">
+                <h1>RSS 3.0</h1>
+            </div>
+            <div data-role="content">
+                <div data-role="controlgroup">
+                    <a data-role="button">Horrible Tragedy</a>
+                    <a data-role="button">Seahogs beats Denver</a>
+                    <a data-role="button" href="#page3">Calle finds a snail</a>
+                    <a data-role="button">Energy drinks found toxic</a>
+                    <a data-role="button">Calle finds a second snail</a>
+                    <a data-role="button" href="#page4">Subway declares bankruptcy</a>
+                </div>
+            </div>
+            <div data-role="footer">
+				<a data-role="button" href="#page1">Back</a>
+				<a data-role="button" href="#page6">Next page</a>
+                <h1>Search and filter options</h1>
+                <div data-role="fieldcontain">
+                    <label for="text1">Search</label>
+                    <input type="text" id="text1" data-theme="d">
+                </div>
+                <a data-role="button">Done</a>
+                <a data-role="button" href="#page2">Filter options</a>
+            </div>
+        </div>
+        <div data-role="page" id="page2" data-theme="a">
+            <div data-role="header">
+                <h1>Filter Options</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <a data-role="button">Categories</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#page5">Sources</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role="content">
+                <input type="checkbox" id="checkbox16">
+                <label for="checkbox16">Sports</label>
+                <div data-role="collapsible">
+                    <h1>Sports</h1>
+                    <input type="checkbox" id="checkbox21">
+                    <label for="checkbox21">Football</label>
+                    <input type="checkbox" id="checkbox20">
+                    <label for="checkbox20">Hockey</label>
+                    <input type="checkbox" id="checkbox22">
+                    <label for="checkbox22">Synchronized swimming</label>
+                </div>
+                <fieldset data-role="controlgroup">
+                    <legend></legend>
+                </fieldset>
+                <div class="div-widget">
+                    <input type="checkbox" id="checkbox23">
+                    <label for="checkbox23">Weather</label>
+                    <div data-role="collapsible">
+                        <h1>Weather</h1>
+                        <input type="checkbox" id="checkbox24">
+                        <label for="checkbox24">European weather</label>
+                        <input type="checkbox" id="checkbox25">
+                        <label for="checkbox25">World weather</label>
+                        <input type="checkbox" id="checkbox26">
+                        <label for="checkbox26">Somalian weather</label>
+                    </div>
+                    <fieldset data-role="controlgroup">
+                        <legend></legend>
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain" id="slider1">
+                    <label for="slider1-range">News Per Page</label>
+                    <input type="range" id="slider1-range" value="50" min="0" max="100"
+                    step="1">
+                </div>
+                <a data-role="button" href="#page1">Done</a>
+            </div>
+        </div>
+        <div data-role="page" id="page3">
+            <div data-role="header" data-theme="a">
+                <h1>Calle finds a snail</h1>
+            </div>
+            <div data-role="content">
+                <img src="images/snail.png">
+                <textarea disabled="disabled" placeholder="Today Calle got very happy. On his journey to school Calle came across a snail which he made as his pet. The snail goes by the name Mr Biggles."></textarea>
+            </div>
+            <div data-role="footer">
+                <a data-role="button" href="#page1">Back</a>
+                <a data-role="button" href="#page4">Next Article</a>
+            </div>
+        </div>
+        <div data-role="page" id="page4">
+            <div data-role="header">
+                <h1>Subway declares bankruptcy</h1>
+            </div>
+            <div data-role="content">
+                <img src="images/subway.png">
+                <textarea disabled="disabled" placeholder="Today Subway declares bankruptcy since their new oppened stores in somalia failed."></textarea>
+            </div>
+            <div data-role="footer">
+                <a data-role="button" href="#page1">Back</a>
+                <a data-role="button" href="#page3">Next Article</a>
+            </div>
+        </div>
+        <div data-role="page" id="page5" data-theme="a">
+            <div data-role="header">
+                <h1>Filter Options</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <a data-role="button" href="#page2">Categories</a>
+                        </li>
+                        <li>
+                            <a data-role="button">Sources</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role="content">
+                <fieldset data-role="controlgroup">
+                    <legend></legend>
+                    <input type="checkbox" id="checkbox27">
+                    <label for="checkbox27">Aftonbladet</label>
+                    <input type="checkbox" id="checkbox28">
+                    <label for="checkbox28">CNN</label>
+                    <input type="checkbox" id="checkbox30">
+                    <label for="checkbox30">Arnes Magasin</label>
+                    <input type="checkbox" id="checkbox29">
+                    <label for="checkbox29">FOX-NEWS</label>
+                </fieldset>
+                <div data-role="fieldcontain" id="slider2">
+                    <label for="slider2-range">News Per Page</label>
+                    <input type="range" id="slider2-range" value="50" min="0" max="100"
+                    step="1">
+                </div>
+                <a data-role="button" href="#page7">Done</a>
+            </div>
+        </div>
+		<div data-role="page" id="page6" data-theme="a">
+            <div data-role="header" data-position="inline">
+                <h1>RSS 3.0</h1>
+            </div>
+            <div data-role="content">
+                <div data-role="controlgroup">
+                    <a data-role="button">Another Horrible Tragedy</a>
+                    <a data-role="button">No legs strategy!</a>
+                    <a data-role="button" href="#page3">Calle finds a third snail</a>
+                    <a data-role="button">Piracy is a crime</a>
+                    <a data-role="button">Calle finds his fourth snail</a>
+                    <a data-role="button" href="#page4">KFC comes to Sweden.</a>
+                </div>
+            </div>
+            <div data-role="footer">
+			<a data-role="button" href="#page1">Back</a>
+				<a data-role="button" href="#page1">Next page</a>
+                <h1>Search and filter options</h1>
+                <div data-role="fieldcontain">
+                    <label for="text1">Search</label>
+                    <input type="text" id="text12" data-theme="d">
+                </div>
+                <a data-role="button">Done</a>
+                <a data-role="button" href="#page2">Filter options</a>
+            </div>
+        </div>
+        
+    </body>
+
+</html>
